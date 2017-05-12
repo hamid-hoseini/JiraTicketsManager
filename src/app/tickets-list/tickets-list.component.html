@@ -1,0 +1,29 @@
+<h3>
+  Tickets List
+</h3>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Client</th>
+      <th>Ticket No.</th>
+      <th>Status</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ticket of tickets;  let i=index" (click)="onSelect(ticket)">
+      <td>{{i+1}}</td>
+      <td>{{ticket.date}}</td>
+      <td>{{ticket.client}}</td>
+      <td>{{ticket.ticketNo}}</td>
+      <td>{{ticket.status}}</td>
+      <td><span class="action mytooltip" (click)="modifyTicket(ticket)"><i class="fa fa-edit fa-2x"></i></span></td>
+      <td><span class="action mytooltip" (click)="deleteTicket(ticket);  $event.stopPropagation()"><i class="fa fa-trash-o fa-2x"></i></span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.m-t-60{
+  margin-top: 60px;
+}
+.m-l-30{
+  margin-left: 30px;
+}
+.p-t-60{
+  padding-top: 60px;
+}

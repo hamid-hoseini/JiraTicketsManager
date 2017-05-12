@@ -1,0 +1,23 @@
+.form-group {
+  margin: 10px 0 10px 0;
+}
+.form-group label{
+  display: block;
+}
+#reset {
+  margin-left: 10px;
+}
+.form-group input, .input-group textarea{
+  border-radius: 5px!important;
+}
+
+.form-group input{
+  width: 200px;
+}
+.form-group textarea{
+  width: 400px;
+}
+#link{
+  width: 400px;
+}
+
